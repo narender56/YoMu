@@ -1,6 +1,9 @@
 // stylelint-disable no-eol-whitespace
 
 /* Heights */
+.h100vh {
+  height: 100vh;
+}
 
 $heights: (
   0: 0,
@@ -46,6 +49,18 @@ $heights: (
   }
 
   .maxh#{$name} {
+    max-height: #{$val};
+  }
+
+  .h#{$name}-imp {
+    height: #{$val} !important;
+  }
+
+  .minh#{$name}-imp {
+    min-height: #{$val};
+  }
+
+  .maxh#{$name}-imp {
     max-height: #{$val};
   }
 }

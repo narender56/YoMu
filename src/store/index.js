@@ -1,8 +1,12 @@
 import { createStore } from 'vuex'
 
+import profile from './profile'
+
 const state = {}
 
-const modules = {}
+const modules = {
+  profile
+}
 
 const getters = {}
 

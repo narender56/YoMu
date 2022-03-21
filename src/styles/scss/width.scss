@@ -4,6 +4,10 @@
 
 /* Widths */
 
+.w100vw {
+  width: 100vw;
+}
+
 $widths: (
   0: 0,
   auto: auto,
@@ -49,6 +53,10 @@ $widths: (
 
   .maxw#{$name} {
     max-width: #{$val};
+  }
+
+  .w#{$name}-imp {
+    width: #{$val} !important;
   }
 
   .flex#{$name} {

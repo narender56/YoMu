@@ -1,6 +1,7 @@
 import mitt from 'mitt'
 export const $eventBus = mitt()
 import http from './http'
+import config from '../../config'
 
 const deviceRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i
 
@@ -11,6 +12,7 @@ const GlobalConfig = {
     app.config.globalProperties.$eventBus = $eventBus
     app.config.globalProperties.$store.$eventBus = $eventBus
     app.config.globalProperties.$isMobile = deviceRegex.test(navigator.userAgent)
+    app.config.globalProperties.$config = config
   }
 }
 

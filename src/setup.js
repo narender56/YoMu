@@ -1,4 +1,27 @@
 'use strict'
+import moment from 'moment'
+
+const locale = {
+  relativeTime: {
+    future : '%s',
+    past : '%s',
+    s: number => `${number}s`,
+    m: number => `${number}m`,
+    h: number => `${number}h`,
+    d: number => `${number}d`,
+    dd: number => `${number}d`,
+    M: number => `${number} ago`
+  }
+}
+
+moment.updateLocale('en', locale)
+
+function formatDate(format = 'DD MMM, YYYY') {
+  return moment(this).format(format)
+}
+
+Number.prototype.formatDate = formatDate
+String.prototype.formatDate = formatDate
 
 Array.prototype.last = function() {
   return this[this.length - 1]

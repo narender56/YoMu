@@ -2,6 +2,10 @@
 @import './breakpoints.scss';
 
 $spacing: (
+  -1: -0.1rem,
+  -2: -0.125rem,
+  -4: -0.25rem,
+  -8: -0.5rem,
   0: 0,
   1: 0.1rem,
   2: 0.125rem,
@@ -54,6 +58,13 @@ $classes: (
     .#{$class}#{$step} {
       @each $attr in $attrs {
         #{$attr}: #{$var};
+        box-sizing: border-box;
+      }
+    }
+
+    .#{$class}#{$step}-imp {
+      @each $attr in $attrs {
+        #{$attr}: #{$var} !important;
         box-sizing: border-box;
       }
     }

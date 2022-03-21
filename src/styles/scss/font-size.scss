@@ -22,4 +22,8 @@ $val in $sizes {
   .f#{$name} {
     font-size: #{$val};
   }
+
+  .f#{$name}-imp {
+    font-size: #{$val} !important;
+  }
 }

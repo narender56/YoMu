@@ -36,5 +36,9 @@ $radii: (
     .br#{$name}#{$radName} {
       border#{$val}-radius: #{$radValue};
     }
+
+    .br#{$name}#{$radName}-imp {
+      border#{$val}-radius: #{$radValue} !important;
+    }
   }
 }

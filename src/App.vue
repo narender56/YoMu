@@ -1,12 +1,10 @@
 <template>
-  <main>
-    <router-view />
-  </main>
+  <router-view />
 </template>
 
 <script>
 export default {
-  name: 'sample-vue-app',
+  name: 'root',
   mounted() {
     this.registerGlobalListeners()
   },
@@ -18,6 +16,10 @@ export default {
 
 <style lang="scss">
   body {
+    margin: 0;
+  }
+
+  body, #app {
     height: 100%;
     width: 100%;
     min-height: 100vh;
