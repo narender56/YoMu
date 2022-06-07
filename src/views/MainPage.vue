@@ -15,6 +15,7 @@
         <div class="age-preference">
           <label>Age Preference</label>
           <c-slider :value="[20, 30]" :showTooltip="false" />
+          <c-button />
         </div>
       </template>
     </c-drawer>
