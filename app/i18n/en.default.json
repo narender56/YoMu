@@ -1,0 +1,15 @@
+{
+  "login": {
+    "title_h1": "Let’s sign you in",
+    "title_h2": "Enter your number to get an OTP",
+    "phone": {
+      "hint": "Enter your phone number",
+      "send": "Send OTP"
+    },
+    "otp": {
+      "title_h1": "OTP Verification",
+      "title_h2": "An authentication code has been sent to ",
+      "submit": "Verify"
+    }
+  }
+}

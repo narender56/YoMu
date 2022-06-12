@@ -5,8 +5,8 @@
     </flexboxLayout>
     {#if !showOtpLayout}
       <flexboxLayout class="login-form">
-        <label class="label-1" text="Let’s sign you in" />
-        <label class="label-2" text="Enter your number to get an OTP" />
+        <label class="label-1" text={_t('login.title_h1')} />
+        <label class="label-2" text={_t('login.title_h2')} />
         <stackLayout orientation="horizontal">
           <textField
             class="country-code"
@@ -18,28 +18,28 @@
           /> 
           <textField
             class="phone-number"
-            hint="Enter your phone number"
+            hint={_t('login.phone.hint')}
             text={phoneNumber}
             keyboardType="phone"
             maxLength="10"
           /> 
         </stackLayout>
-        <button class="submit-button" on:tap={move} text='Get OTP' />
+        <button class="submit-button" on:tap={toggleOtp} text={_t('login.phone.send')} />
         <activityIndicator busy={inProgress} />
       </flexboxLayout>
     {/if}
 
     {#if showOtpLayout}
       <flexboxLayout class="otp-wrapper">
-        <label class="label-1" text="OTP Verification" />
-        <label class="label-2" text="An authentication code has been sent to {combined}" />
+        <label class="label-1" text={_t('login.otp.title_h1')} />
+        <label class="label-2" text={_t('login.otp.title_h2') + combined } />
         <flexboxLayout class="otp-box">
           <textField class="otp-number" maxLength="1" keyboardType="phone" />
           <textField class="otp-number" maxLength="1" keyboardType="phone" />
           <textField class="otp-number" maxLength="1" keyboardType="phone" />
           <textField class="otp-number" maxLength="1" keyboardType="phone" />
         </flexboxLayout>
-        <button class="submit-button" on:tap={toggleOtp} text='Back'/>
+        <button class="submit-button" on:tap={move} text={_t('login.otp.submit')}/>
         <activityIndicator busy={inProgress} />
       </flexboxLayout>
     {/if}
@@ -47,8 +47,10 @@
 </page>
 
 <script lang="ts">
-  import Home from './pages/Home.svelte'
   import { navigate } from 'svelte-native'
+  import { _t } from './services/i18n'
+
+  import Home from './pages/Home.svelte'
 
   let phoneNumber = ''
   let countryCode = ''

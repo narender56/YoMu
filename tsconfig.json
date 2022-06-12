@@ -10,6 +10,7 @@
         "noEmitHelpers": true,
         "noEmitOnError": true,
         "skipLibCheck": true,
+        "resolveJsonModule": true,
         "lib": ["ES2017", "ES6", "DOM"],
         "types": ["svelte"],
         "baseUrl": ".",

@@ -2,15 +2,15 @@
   <tabStrip class="tabs">
     <tabStripItem>
       <label text="Home" class="tabs__name"/>
-      <image src="font://&#xf015;" />
+      <image src="~/img/icons/home.png" />
     </tabStripItem>
     <tabStripItem class="special">
       <label text="Add Question" class="tabs__name"/>
-      <image src="font://&#xf007;"/>
+      <image src="~/img/icons/plus-circle.png" />
     </tabStripItem>
     <tabStripItem class="special">
       <label text="Profile" class="tabs__name"/>
-      <image src="font://&#xf00e;"/>
+      <image src="~/img/icons/user.png" />
     </tabStripItem>
   </tabStrip>
   <slot />
@@ -29,5 +29,9 @@
     &__name {
       font-size: 12;
     }
+  }
+
+  image {
+    height: 40;
   }
 </style>
