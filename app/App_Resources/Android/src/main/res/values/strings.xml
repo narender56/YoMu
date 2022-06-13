@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="_login_otp_submit_Z1kznrO">"Verify"</string>
+  <string name="_login_otp_title_h2_1z8Npz">"An authentication code has been sent to "</string>
+  <string name="_login_otp_title_h1_1z8Npy">"OTP Verification"</string>
+  <string name="_login_phone_send_2i99Ry">"Send OTP"</string>
+  <string name="_login_phone_hint_2i7IPG">"Enter your phone number"</string>
+  <string name="_login_title_h2_dnCbh">"Enter your number to get an OTP"</string>
+  <string name="_login_title_h1_dnCbg">"Let’s sign you in"</string>
+</resources>
