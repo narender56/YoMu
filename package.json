@@ -10,9 +10,9 @@
   "repository": "https://github.com/narender56/yomu",
   "dependencies": {
     "@nativescript-community/ui-pager": "^13.0.37",
-    "@nativescript/camera": "^5.0.12",
+    "@nativescript/camera": "5.0.2",
     "@nativescript/core": "~7.0.0",
-    "@nativescript/imagepicker": "^1.0.6",
+    "@nativescript/imagepicker": "1.0.0",
     "@nativescript/localize": "^5.0.4",
     "@nativescript/theme": "~2.3.3",
     "@nativescript/webpack": "3.0.0",
